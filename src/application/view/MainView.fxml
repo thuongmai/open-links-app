@@ -39,8 +39,8 @@
             <Label text="INCOGNITO" GridPane.rowIndex="4" />
             <CheckBox fx:id="incognito" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <TextField fx:id="pathFile" onMouseClicked="#pathFileFocus" GridPane.columnIndex="1" />
-            <TextField fx:id="fromLine" onKeyPressed="#setFromLineToNumericalTextField" onMouseClicked="#fromLineFocus" promptText="0 by default" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="toLine" onKeyPressed="#setToLineToNumericalTextField" onMouseClicked="#fromLineFocus" promptText="0 by default" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="fromLine" onKeyPressed="#setFromLineToNumericalTextField" onMouseClicked="#fromLineFocus" onMouseExited="#emptyBox" promptText="0 if leave by default" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="toLine" onKeyPressed="#setToLineToNumericalTextField" onMouseClicked="#fromLineFocus" onMouseExited="#emptyBox" promptText="0 if leave by default" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <ComboBox fx:id="browser" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button fx:id="openFile" mnemonicParsing="false" onMouseClicked="#handleOpenBtn" text="..." textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
          </children>

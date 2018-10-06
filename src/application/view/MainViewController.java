@@ -210,6 +210,14 @@ public class MainViewController {
 		this.fromLine.setStyle("-fx-background-color: red;");
 		this.toLine.setStyle("-fx-background-color: red;");
 	}
+	
+	@FXML
+	private void emptyBox() {
+		if (this.fromLine.getText() == null || this.fromLine.getText().isEmpty())
+			this.fromLine.setText("0");
+		if (this.toLine.getText() == null || this.toLine.getText().isEmpty())
+			this.toLine.setText("0");
+	}
 
 	/*
 	 * Handle browser start chrome www.google.ca gmail.com -incognito start firefox
