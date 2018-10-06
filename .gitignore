@@ -18,25 +18,5 @@
 *.tar.gz
 *.rar
 
-*/bin
-*bin
-*.bin
-*bin
-
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
-.metadata
-local.properties
-.settings/
-# Eclipse Core
-.project
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-
-# Java annotation processor (APT)
-.factorypath
